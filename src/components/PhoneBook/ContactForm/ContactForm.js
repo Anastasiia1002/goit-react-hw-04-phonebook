@@ -22,19 +22,11 @@ const Button = styled.button`
 `;
 
 function ContactForm({ onSubmitForm }) {
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const handleChange = event => {
     const { name, value } = event.currentTarget;
-    // this.setState({
-    //   [name]: value,
-    // });
-
     switch (name) {
       case 'name':
         setName(value);
